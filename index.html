@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <audio autoplay loop muted>
+        <source src="space.mp3"
+        type="audio/mp3">
+    </audio>
+    <div id="main">
+        <div id="nav">
+            <h4 id="Home">Home</h4>
+            <h4 id="About">About</h4>
+            <h4 id="Contact" onclick="document.getElementById('page3').scrollIntoView({behaviour:'smooth'});" >Contact</h4>
+        </div>
+        <div id="page1">
+            <div id="part1">
+                <div id="space">Space Hub</div>
+                <h2 id="KYS">Know your space</h2>
+            </div>
+        </div>
+        <div id="page2">
+            <div id="galaxy">
+                <h1 id="planets" onclick="window.location.href = 'planets/mercury.html'">Planets</h1>
+                
+                
+            </div>
+            <pre>
+                
+            </pre>
+            
+            
+        </div>
+
+
+
+        <div id="page3">
+            <h1>Contact</h1>
+            <div id="links">
+                <h3 onclick="window.open('https://github.com/forcohal', '_blank')"><img src="github.png" width="20" height="20"></img>GitHub</h3>
+                <h3 onclick="window.location.href='https://www.linkedin.com/in/parinav-priyadarshi-458b9a328/'"><img src="linkedIN.png" width="20" height="20"></img>LinkedIn</h3>
+            </div>
+            
+        </div>
+        
+        
+       
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
